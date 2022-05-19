@@ -21,8 +21,8 @@ client.on('ready', () => {
         client.sendMessage(message.from, await MessageMedia.fromUrl(meme.url))
 	} else if (message.body.toLowerCase() === 'arpit'){
         const contact = await message.getContact();
-        console.log(contact)
-        message.reply(' yo whats up' + contact);
+        console.log(contact.pushname)
+        message.reply(' yo whats up' + contact.pushname);
     } 
 });
 
